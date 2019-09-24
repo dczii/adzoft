@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5ba35796d9e4c9b5e75c9adf5757d38a",
+    "revision": "b776657c06382dd522c8a4f47364c07c",
     "url": "/adzoft/index.html"
   },
   {
-    "revision": "99a07dd8c96370cd3326",
+    "revision": "94cd129f9b2579d7f49e",
     "url": "/adzoft/static/css/main.b100e6da.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/adzoft/static/js/2.d3f86d1d.chunk.js"
   },
   {
-    "revision": "99a07dd8c96370cd3326",
-    "url": "/adzoft/static/js/main.8f7bd39a.chunk.js"
+    "revision": "94cd129f9b2579d7f49e",
+    "url": "/adzoft/static/js/main.877806a8.chunk.js"
   },
   {
     "revision": "10c65295cc58743151e0",
