@@ -1,22 +1,59 @@
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #DF6E21;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#root {
+  background: #DF6E21;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
 .App {
   text-align: center;
+  background: #DF6E21;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 8rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.script-box {
+  will-change: width, height, left, top;
+  position: relative;
+}
+
+.test-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+
+}
+p {
+  color: #FFF;
+  font-size: 24px;
 }
 
-.App-link {
-  color: #09d3ac;
+.animate-container {
+  position: fixed;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  background: #DF6E21;
 }
