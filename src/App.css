@@ -27,6 +27,13 @@
 
 .App-logo {
   height: 8rem;
+
+}
+@media only screen and (max-width: 600px) {
+  .App-logo {
+    width: 90%;
+    height: auto;
+  }
 }
 
 .script-box {
