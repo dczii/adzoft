@@ -8,7 +8,7 @@ function Header(props) {
   return (
     <div className='header-component'>
         <Button onClick={() => props.history.push('/')}>
-            <img src={LogoPng} height='auto' width='100px'/>
+            <img src={LogoPng} height='auto' width='100px'alt='logo' />
         </Button>
     </div>
   );
