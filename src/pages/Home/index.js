@@ -7,11 +7,11 @@ import VisionSVG from '../../assets/vision.svg';
 import StudioSVG from '../../assets/studio.svg';
 import './styles.scss';
 
-function Home() {
+function Home(props) {
 return (
     <Grid container className='home-component'>
     
-        <Grid item xs={12} md={8} className='section-work'>
+        <Grid item xs={12} md={8} className='section-work' onClick={() => props.history.push('/works')}>
             <img src={WorkSVG} className='work-svg' alt='SVG' />
             <Container>
             <p className='title'>WORKS</p>

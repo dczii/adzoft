@@ -1,0 +1,56 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css');
+
+.works-component {
+    background: #DF6E21;
+    font-family: 'Latinka';
+    padding: 100px 0px;
+
+    .block {
+        text-align: left;
+        justify-content: flex-start;
+        position: relative;
+        margin-bottom: 250px;
+
+    }
+
+    .video-container {
+        max-width: 900px;
+        video {
+            width: 100%;
+        }
+    }
+
+    .content-container {
+        height: 350px;
+        width: 300px;
+        background: #FFF;
+        border-left: 15px solid #DF6E21;
+        border-bottom: 15px solid #DF6E21;
+        border-top: 15px solid #DF6E21;
+        border-color: #DF6E21;
+        padding: 40px 50px;
+        position: absolute;
+        right: 5%;
+        bottom: 0px;
+
+        @media only  (max-width: 600px) {
+            box-sizing: border-box;
+            position: relative;
+            width: 100%;
+            border: unset;
+            left: 0px;
+        }
+
+        label {
+            font-size: 38px;
+            font-weight: bold;
+            font-family: 'Latinka SemiBold'
+        }
+
+        p {
+            color: #000;
+            font-size: 16px;
+        }
+
+    }
+}
