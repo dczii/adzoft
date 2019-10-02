@@ -25,16 +25,16 @@ return (
             <Grid item xs={12} className='section-vision'>
                 <img src={VisionSVG} className='vision-svg' alt='SVG' />
                 <Container className='content-container'>
-                    <p className='title'>VISION</p>
-                    <h3>We bring world-class design and development services to our clients.</h3>
+                    <p className='title'>ABOUT</p>
+                    <h3>Who we are and Why we do what we do.</h3>
                 </Container>
             </Grid>
 
             <Grid item xs={12} className='section-vision section-team'>
                 <img src={StudioSVG} className='vision-svg' alt='SVG' />
                 <Container className='content-container'>
-                    <p className='title'>STUDIO</p>
-                    <h3>We approach projects with one vision.</h3>
+                    <p className='title'>CONTACT US</p>
+                    <h3>Interested in working with us? Send us a message.</h3>
                 </Container>
             </Grid>
             </Grid>
