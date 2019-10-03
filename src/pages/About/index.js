@@ -3,18 +3,15 @@ import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import ScrollAnimation from 'react-animate-on-scroll';
 import Typist from 'react-typist';
-import _ from 'lodash';
 
 import Icon from '@mdi/react'
 import { mdiRhombus } from '@mdi/js';
 
-import ASvg from '../../assets/A.svg';
 import './styles.scss';
 
 function About(props) {
     return (
         <Grid container className='about-component' justify='center'>
-            <img src={ASvg} className='section-bg'/>
             <Container>
                 <Grid item xs={12} className='center-container'>
                     <div className='content'>

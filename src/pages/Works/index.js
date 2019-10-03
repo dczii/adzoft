@@ -5,7 +5,6 @@ import Typist from 'react-typist';
 import _ from 'lodash';
 
 import Button from '../../components/button';
-import WSvg from '../../assets/W.svg';
 import './styles.scss';
 
 function Works(props) {
@@ -28,8 +27,6 @@ function Works(props) {
     return (
         <Grid container className='works-component' justify='center'>
             <Grid item xs={12} className='center-container'>
-                <img src={WSvg} className='section-bg'/>
-
                 <div className='content'>
 
                     <Typist avgTypingDelay={10} cursor={{show:false}}>
@@ -53,14 +50,12 @@ function Works(props) {
             {_.map(data, (val, index) => {
                 return (
                     <Grid item xs={10} md={10} className='block' key={index}>
-                        <ScrollAnimation animateIn='bounceInLeft' animateOut='bounceOutRight' animateOnce>
+                        <ScrollAnimation animateIn='fadeIn' animateOut='fadeOutRight' animateOnce style={{position:'relative'}}>
                             <div className='video-container' key="a">
                                 <video loop autoPlay muted>
                                     <source src={val.videoSrc} type="video/mp4" />
                                 </video>
                             </div>
-                        </ScrollAnimation>
-                        <ScrollAnimation animateIn='bounceInRight' animateOut='bounceOutLeft'animateOnce>
                             <div className='content-container' key="b">
                                 <label className='adz-blue'>{val.title}</label>
                                 <p>{val.content}</p>
