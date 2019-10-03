@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('../node_modules/react-typist/dist/Typist.css');
 
 @font-face {
   font-family: "Latinka SemiBold";
@@ -46,4 +47,83 @@ h3 {
 
 .adz-blue {
   color: #2096BA;
+}
+
+.center-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-top: 100px !important;
+  padding-bottom: 200px !important;
+
+  img {
+    width: 900px;
+    height: 500px;
+    transform: 'translate3d(0px, 0px, 0px)';
+    transform-origin:' 0px 0px 0px';
+  }
+
+  .content {
+    z-index: 999;
+    text-align: left;
+    color: #FFF;
+    width: 70%;
+
+    span {
+      font-size: 1.5rem;
+      font-family: 'Latinka';
+      display: block;
+    }
+  
+    label {
+      font-size: 5rem;
+      font-family: 'Latinka SemiBold';
+      display: block;
+    }
+  }
+
+  .section-bg {
+    position: fixed;
+    top: 25%;
+  }
+}
+
+
+
+.snow {
+	position: absolute;
+	min-width: 100vw;
+	min-height: 100vh;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.snow .svg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#snow-top-layer {
+	will-change: transform;
+	transform: translateY(-768px);
+	animation: fall 22.5s infinite linear;
+}
+
+#snow-bottom-layer {
+	will-change: transform;
+	transform: translateY(-768px);
+	animation: fall 45s infinite linear;
+}
+
+@keyframes fall {
+	
+	100% {
+		transform: translateY(0);
+	}
+	
 }
