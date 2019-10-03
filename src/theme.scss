@@ -49,6 +49,15 @@ h3 {
   color: #2096BA;
 }
 
+.display-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 50px;
+  text-align: justify;
+}
+
 .center-container {
   display: flex;
   flex-direction: column;
@@ -57,13 +66,6 @@ h3 {
   position: relative;
   padding-top: 100px !important;
   padding-bottom: 200px !important;
-
-  img {
-    width: 900px;
-    height: 500px;
-    transform: 'translate3d(0px, 0px, 0px)';
-    transform-origin:' 0px 0px 0px';
-  }
 
   .content {
     z-index: 999;
@@ -83,17 +85,24 @@ h3 {
       display: block;
     }
   }
-
-  .section-bg {
-    position: fixed;
-    top: 25%;
-  }
 }
 
+.section-bg {
+  position: fixed;
+  top: 25%;
+  width: 900px;
+  height: 500px;
+  transform: translate3d(0px, 0px, 0px);
+  transform-origin: 0px 0px 0px;
+  z-index: 0;
+}
 
+.MuiContainer-root {
+  z-index: 1;
+}
 
 .snow {
-	position: absolute;
+	position: fixed;
 	min-width: 100vw;
 	min-height: 100vh;
 	height: 100%;
