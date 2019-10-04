@@ -41,6 +41,7 @@ function Header(props) {
           >
             <Icon path={mdiXboxControllerMenu} size={2} color='white' />
           </IconButton>
+          
           <Menu
             id="long-menu"
             anchorEl={anchorEl}
@@ -49,7 +50,7 @@ function Header(props) {
             onClose={handleClose}
             TransitionComponent={Fade}
           >
-            <Link to="/staging">
+            <Link to="/works">
               <MenuItem onClick={handleClose}>
                 WORKS
               </MenuItem>

@@ -28,7 +28,6 @@ function Works(props) {
         <Grid container className='works-component' justify='center'>
             <Grid item xs={12} className='center-container'>
                 <div className='content'>
-
                     <Typist avgTypingDelay={10} cursor={{show:false}}>
                         <span>We help create your digital presence through carefully thought of</span>
                     </Typist>

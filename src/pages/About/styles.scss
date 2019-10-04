@@ -1,7 +1,23 @@
 .about-component {
-    background: #2096BA;
+    background: linear-gradient( #DF6E21, #2096BA);;
+    
     padding-top: 150px;
     padding-bottom: 150px;
     height: 100%;
     color: #FFF;
+
+    .block-2 {
+        p {
+            text-align: left;
+        }
+
+        .vision-container {
+            justify-content: flex-start;
+            background: #DF6E21;
+            border: 5px solid rgba(0,0,0,0);
+            height: 100%;
+            border-radius: 20px;
+            padding: 20px;
+        }
+    }
 }
