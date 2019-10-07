@@ -30,7 +30,7 @@ return (
                     </Container>
                 </Grid>
 
-                <Grid item xs={12} className='section-vision section-team'>
+                <Grid item xs={12} className='section-vision section-team' onClick={() => props.history.push('/contact-us')}>
                     <img src={StudioSVG} className='vision-svg' alt='SVG' />
                     <Container className='content-container'>
                         <p className='title'>CONTACT US</p>

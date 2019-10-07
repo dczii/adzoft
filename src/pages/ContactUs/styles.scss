@@ -1,0 +1,21 @@
+.contact-component {
+    background: linear-gradient( #2096BA, #252b61);;
+    
+    padding-top: 150px;
+    padding-bottom: 150px;
+    height: 100vh;
+    color: #FFF;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        color: #FFF;
+        display: block;
+        &:hover{
+            color: rgba(37, 43, 97, 0.8)
+        }
+    }
+}
