@@ -10,6 +10,10 @@
         position: relative;
         padding-bottom: 250px;
 
+        @media (max-width: 767px) {
+            padding-bottom: 50px;
+        }
+
     }
 
     .video-container {
@@ -32,7 +36,12 @@
         right: 5%;
         bottom: 0px;
 
-        @media only  (max-width: 600px) {
+        @media (max-width: 767px) {
+            height: 100%;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
             box-sizing: border-box;
             position: relative;
             width: 100%;

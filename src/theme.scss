@@ -57,6 +57,16 @@ h3 {
   align-items: center;
   padding: 100px 50px;
   text-align: justify;
+
+  @media (max-width: 767px) {
+    padding: 100px 10px;
+    h1 {
+      font-size: 24px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
 }
 
 .center-container {
@@ -68,11 +78,16 @@ h3 {
   padding-top: 100px !important;
   padding-bottom: 200px !important;
 
+  @media (max-width: 767px) {
+    padding-top: 50px !important;
+    padding-bottom: 100px !important;
+  }
+
   .content {
     z-index: 999;
     text-align: center;
     color: #FFF;
-    width: 70%;
+    width: 75%;
 
     span {
       font-size: 1.5rem;
@@ -84,6 +99,15 @@ h3 {
       font-size: 5rem;
       font-family: 'Latinka SemiBold';
       display: block;
+    }
+
+    @media (max-width: 767px) {
+      span {
+        font-size: 1rem;
+      }
+      label {
+        font-size: 2.5rem;
+      }
     }
   }
 }
