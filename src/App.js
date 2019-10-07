@@ -1,5 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 import Home from './pages/Home';
 import Works from './pages/Works';
@@ -7,20 +8,27 @@ import About from './pages/About';
 import ComingSoon from './pages/ComingSoon';
 import ContactUs from './pages/ContactUs';
 import Header from './components/header';
+import Routes from './routes';
 
 import '../node_modules/react-typist/dist/standalone/Typist';
 
-function App() {
+function App({location}) {
+  console.log(location)
   return (
     <Router style={{position:'relative'}}>
-      <div>
-        <Header />
-          <Route exact path="/" component={ComingSoon} />
-          <Route exact path="/staging" component={Home} />
-          <Route exact path="/works" component={Works} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/contact-us" component={ContactUs} />
-      </div>
+      <TransitionGroup>
+        <CSSTransition
+          // key={location.key}
+          timeout={{ enter: 300, exit: 300 }}
+          classNames={'fade'}
+        >
+          <div>
+            <Header />
+            <Routes />
+          </div>
+
+        </CSSTransition>
+      </TransitionGroup>
     </Router>
   );
 }

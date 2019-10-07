@@ -60,7 +60,7 @@ function Header(props) {
                 ABOUT
               </MenuItem>
             </Link>
-            <Link to="/contact">
+            <Link to="/contact-us">
               <MenuItem onClick={handleClose}>
                 CONTACT
               </MenuItem>
