@@ -10,9 +10,8 @@
         justify-content: center;
 
         .work-svg {
-            max-height: 300px;
+            max-height: 500px;
             width: auto;
-            margin-bottom: 40px;
         }
 
         p.title {
@@ -20,6 +19,7 @@
             margin-bottom: 20px;
             position: relative;
             letter-spacing: 2px;
+            margin-top: 0px;
     
             &::before {
                 content: '';
@@ -46,7 +46,16 @@
         .vision-svg {
             max-width: 350px;
             height: auto;
+            margin-top: -80px;
         }
+
+        .contact-svg {
+            max-width: 650px;
+            height: auto;
+            margin-top: -80px;
+        }
+
+        
 
         p.title {
             font-size: 20px;

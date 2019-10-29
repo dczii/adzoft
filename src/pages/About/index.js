@@ -2,7 +2,6 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import ScrollAnimation from 'react-animate-on-scroll';
-import Typist from 'react-typist';
 
 import Icon from '@mdi/react'
 import { mdiRhombus } from '@mdi/js';

@@ -2,9 +2,9 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 
-import WorkSVG from '../../assets/laptop.svg';
-import VisionSVG from '../../assets/vision.svg';
-import StudioSVG from '../../assets/studio.svg';
+import WorkSVG from '../../assets/svg/ADZ1.svg';
+import VisionSVG from '../../assets/svg/ADZ2.svg';
+import StudioSVG from '../../assets/svg/ADZ3.svg';
 import './styles.scss';
 
 function Home(props) {
@@ -31,7 +31,7 @@ return (
                 </Grid>
 
                 <Grid item xs={12} className='section-vision section-team' onClick={() => props.history.push('/contact-us')}>
-                    <img src={StudioSVG} className='vision-svg' alt='SVG' />
+                    <img src={StudioSVG} className='contact-svg' alt='SVG' />
                     <Container className='content-container'>
                         <p className='title'>CONTACT US</p>
                         <h3>Interested in working with us? Send us a message.</h3>
