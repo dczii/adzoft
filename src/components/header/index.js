@@ -26,7 +26,7 @@ function Header(props) {
 
   return (
       <div className='header-component'>
-        <Link to="/staging">
+        <Link to="/">
           <Button>
               <img src={LogoPng} height='auto' width='100px'alt='logo' />
           </Button>

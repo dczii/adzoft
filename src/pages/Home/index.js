@@ -26,7 +26,7 @@ return (
                     <img src={VisionSVG} className='vision-svg' alt='SVG' />
                     <Container className='content-container'>
                         <p className='title'>ABOUT</p>
-                        <h3>Who we are and Why we do what we do.</h3>
+                        <h3>Who we are and Why we do What we do.</h3>
                     </Container>
                 </Grid>
 
