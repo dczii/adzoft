@@ -1,8 +1,9 @@
 
 .works-component {
-    background: #ef5f00;
+    background: #e66c0f;
     font-family: 'Latinka';
     padding: 100px 0px;
+    width: 100%;
 
     .block {
         text-align: left;
@@ -14,6 +15,89 @@
             padding-bottom: 50px;
         }
 
+    }
+
+    > .center-container > .content {
+        text-align: left;
+        z-index: 999;
+        color: #FFF;
+        width: 100%;
+
+        > label {
+            font-family: "Otama";
+            font-size: 7rem;
+            display: block;
+        }
+
+        > label.l1 {
+            text-indent: 15%;
+        }
+
+        > label.l2 {
+            text-indent: 20%;
+        }
+        
+        > span {
+            font-family: "Helvetica";
+            font-size: 1.4rem;
+            display: block;
+        }
+
+        > span.p1 {
+            text-indent: 20%;
+        }
+        
+        > span.p2 {
+            text-indent: 25%;
+        }
+        
+        > span.p3 {
+            text-indent: 47%;
+            margin-top: -30px;
+        }
+
+        > .shadow {
+            height: 25px;
+            margin: 10px auto;
+            width: 80%;
+            border-radius: 100%;
+            background-color: #e3570a;
+        }
+
+        @media (max-width: 767px) {
+            > label {
+                font-size: 3rem;
+            }
+    
+            > label.l1 {
+                text-indent: 5%;
+            }
+    
+            > label.l2 {
+                text-indent: 10%;
+            }
+            
+            > span {
+                font-size: 1rem;
+                text-indent: 0;
+            }
+    
+            > span.p1 {
+                text-indent: 0;
+                margin-left: 10%;
+            }
+            
+            > span.p2 {
+                text-indent: 0;
+                margin-left: 13%;
+            }
+            
+            > span.p3 {
+                text-indent: 0;
+                margin-top: 0px;
+                margin-left: 20%;
+            }
+        }
     }
 
     .video-container {
@@ -49,11 +133,11 @@
             left: 0px;
         }
 
-        label {
+        > label {
             font-size: 38px;
             font-weight: bold;
-            font-family: 'Latinka SemiBold'
         }
+
 
         p {
             color: #000;

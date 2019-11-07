@@ -28,21 +28,13 @@ function Works(props) {
         <Grid container className='works-component' justify='center'>
             <Grid item xs={12} className='center-container'>
                 <div className='content'>
-                    <Typist avgTypingDelay={10} cursor={{show:false}}>
-                        <span>We help create your digital presence through carefully thought of</span>
-                    </Typist>
-                    <Typist avgTypingDelay={60} cursor={{show:false}}>
-                        <label>Designing</label>
-                    </Typist>
-                    <Typist avgTypingDelay={5} cursor={{show:false}}>
-                        <span>we turn that vision into a tangible, business-generating website through our expertise in</span>
-                    </Typist>
-                    <Typist avgTypingDelay={60} cursor={{show:false}}>
-                        <label>Development </label>
-                    </Typist>
-                    <Typist avgTypingDelay={30} cursor={{show:false}}>
-                        <span>& Custom Solutions</span>
-                    </Typist>
+                    <span className="p1">We help create your digital presence through carefully thought of</span>
+                    <label className="l1">Designing</label>
+                    <span className="p2">we turn that vision into a tangible, business-generating website through our expertise in</span>
+                    <label className="l2">Development </label>
+                    <span className="p3">& Custom Solutions</span>
+
+                    <div className='shadow'/>
                 </div>
             </Grid>
             
