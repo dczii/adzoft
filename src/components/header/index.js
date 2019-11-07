@@ -65,7 +65,6 @@ function Header(props) {
                 CONTACT
               </MenuItem>
             </Link>
-            ))}
           </Menu>
         </div>
       </div>

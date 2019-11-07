@@ -16,15 +16,16 @@ function App(props) {
         </a>
 
         <div className='social-container'>
-            <a href="#" className='a1'>
+            {/* // eslint-disable-next-line no-use-before-define */}
+            <button href={null} className='a1'>
                 <p className="p1">FACEBOOK</p>
-            </a>
-            <a href="#" className='a2'>
+            </button>
+            <button href={null} className='a2'>
                 <p className="p1">TWITTER</p>
-            </a>
-            <a href="#" className='a3'>
+            </button>
+            <button href={null} className='a3'>
                 <p className="p1">INSTAGRAM</p>
-            </a>
+            </button>
         </div>
     </Grid>
   );

@@ -29,7 +29,7 @@ function Home(props) {
                     <h2>We create beautiful and functional websites for individuals and businesses.</h2>
                 </Grid>
                 <Grid item xs={12}>
-                    <Grid container className='App'>
+                    <Grid container className='App mobile-block-2'>
                         <Grid item xs={12} md={6} className='section-vision' 
                             // onClick={() => props.history.push('/about')}
                         >
@@ -44,7 +44,7 @@ function Home(props) {
                             // onClick={() => props.history.push('/contact-us')}
                         >
                             <img src={StudioSVG} className='contact-svg' alt='SVG' />
-                            <Container className='content-container'>
+                            <Container className='content-container mobile-contact-container'>
                                 <p className='title'>CONTACT US</p>
                                 <h3>Interested in working with us?<br />Send us a message.</h3>
                             </Container>

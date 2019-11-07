@@ -18,8 +18,16 @@
         flex-direction: column;
         justify-content: center;
 
+        @media (max-width: 767px) {
+            overflow: hidden;
+        }
+
         .work-svg {
             max-height: 500px;
+            @media (max-width: 767px) {
+                width: 140%;
+                margin-left: -80px;
+            }
             width: auto;
         }
 
@@ -31,7 +39,14 @@
             margin: 0 auto;
             @media (max-width: 767px) {
                 width: 90%;
+                font-size: 2rem;
             }
+        }
+    }
+
+    .mobile-block-2 {
+        @media (max-width: 767px) {
+            height: 100vh;
         }
     }
 
@@ -48,13 +63,18 @@
             position: absolute;
             bottom: 5%;
             height: 200px;
+            &.mobile-contact-container {
+                @media (max-width: 767px) {
+                    bottom: 25%;      
+                }
+            }
         }
 
         @media (max-width: 767px) {
-            height: 50vh;
+            height: 50%;
 
             > .content-container {
-                bottom: 5%;
+                bottom: 9%;
                 height: unset;
 
 
@@ -73,15 +93,22 @@
             max-width: 350px;
             height: auto;
             margin-top: -80px;
+
+            @media (max-width: 767px) {
+                max-width: 250px;
+            }
         }
 
         .contact-svg {
             max-width: 650px;
             height: auto;
             margin-top: -80px;
-        }
 
-        
+            @media (max-width: 767px) {
+                margin-top: -200px;
+                max-width: 150px;
+            }
+        }
 
         p.title {
             font-family: "Otama";
