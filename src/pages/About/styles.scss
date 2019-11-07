@@ -1,14 +1,61 @@
 .about-component {
     background: #2096BA;
     
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 80px;
+    padding-bottom: 50px;
     height: 100%;
     color: #FFF;
 
     @media (max-width: 767px) {
         padding-top: 50px;
         padding-bottom: 20px;
+    }
+
+    > div > .display-center {
+        padding: 60px;
+        @media (max-width: 767px) {
+            padding-top: 50px;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+    
+    .header1 {
+        font-family: "Otama";
+        font-weight: 400;
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .header2 {
+        font-family: "Otama";
+        font-weight: 400;
+        font-size: 3rem;
+        margin-top: -15%;
+        @media (max-width: 767px) {
+            margin-top: -13%;
+        }
+    }
+
+    .shadow {
+        height: 35px;
+        margin: 20px auto;
+        width: 100%;
+        border-radius: 100%;
+        background-color: #2b87b3;
+    }
+
+    .p1 {
+        text-align: center;
+        font-family: "Helvetica";
+        font-weight: 200;
+        width: 80%;
+        margin-top: 0px;
+
+        @media (max-width: 767px) {
+            width: 100%;
+            text-align: left;
+        }
     }
 
     .block-2 {
@@ -24,5 +71,12 @@
             border-radius: 20px;
             padding: 20px;
         }
+
+        @media (max-width: 767px) {
+            > .display-center {
+                margin-bottom: 50px;
+            }
+        }
+
     }
 }

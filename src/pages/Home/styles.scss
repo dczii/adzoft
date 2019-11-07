@@ -36,13 +36,28 @@
     }
 
     .section-vision {
-        height: 100vh;
+        height: 50vh;
         background: #2096BA;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         position: relative;
+
+        @media (max-width: 767px) {
+            > .content-container {
+                bottom: 10%;
+
+                > .title {
+                    font-size: 1rem;
+                }
+                
+                > h3 {
+                    font-size: 1.4rem;
+                }
+            }
+
+        }
 
         .vision-svg {
             max-width: 350px;

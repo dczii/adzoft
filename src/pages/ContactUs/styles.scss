@@ -23,6 +23,10 @@
         &:hover {
             color: #e66c0f;
         }
+
+        @media (max-width: 767px) {
+            font-size: 3rem;
+        }
     }
 
     .social-container {
@@ -49,6 +53,10 @@
     
             &:hover {
                 color: #e66c0f;
+            }
+
+            @media (max-width: 767px) {
+                font-size: 1rem;
             }
         }
         
