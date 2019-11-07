@@ -1,5 +1,5 @@
 .contact-component {
-    background: linear-gradient( #2096BA, #252b61);;
+    background-color: #00076f;
     
     padding-top: 150px;
     padding-bottom: 150px;
@@ -10,6 +10,49 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    > h1 {
+        font-family: "Helvetica";
+        font-weight: 400;
+    }
+
+    > a > h3 {
+        font-family: "Otama";
+        font-size: 5rem;
+
+        &:hover {
+            color: #e66c0f;
+        }
+    }
+
+    .social-container {
+        display: flex;
+        flex-direction: row;
+
+        > a {
+            margin: 10px 10px;
+
+            > p {
+                margin: 5px 0px;
+            }
+        }
+
+        > a.a2 {
+            padding: 0px 10px;
+            border-left: 1px solid;
+            border-right: 1px solid;
+        }
+
+        > a > p.p1 {
+            font-family: "Helvetica";
+            font-size: 1.5rem;
+    
+            &:hover {
+                color: #e66c0f;
+            }
+        }
+        
+    }
     
     a {
         color: #FFF;

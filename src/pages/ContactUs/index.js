@@ -9,18 +9,25 @@ function App(props) {
   return (
     <Grid container className='contact-component'>
         <h1 style={{ marginBottom: 40 }}>
-            <Icon path={mdiRhombus} size={1} color='white' /> Contact Us
+            Contact Us
         </h1>
         <a href="mailto:sales@adzoft.com">
             <h3>
                 sales@adzoft.com
             </h3>
         </a>
-        <a href="#">
-            <h3>
-                Facebook
-            </h3>
-        </a>
+
+        <div className='social-container'>
+            <a href="#" className='a1'>
+                <p className="p1">FACEBOOK</p>
+            </a>
+            <a href="#" className='a2'>
+                <p className="p1">TWITTER</p>
+            </a>
+            <a href="#" className='a3'>
+                <p className="p1">INSTAGRAM</p>
+            </a>
+        </div>
     </Grid>
   );
 }
