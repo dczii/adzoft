@@ -1,7 +1,5 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
-import ScrollAnimation from 'react-animate-on-scroll';
-import Typist from 'react-typist';
 import _ from 'lodash';
 
 import Button from '../../components/button';
@@ -41,7 +39,6 @@ function Works(props) {
             {_.map(data, (val, index) => {
                 return (
                     <Grid item xs={10} md={10} className='block' key={index}>
-                        <ScrollAnimation animateIn='fadeIn' animateOut='fadeOutRight' animateOnce style={{position:'relative'}}>
                             <div className='video-container' key="a">
                                 <video loop autoPlay muted>
                                     <source src={val.videoSrc} type="video/mp4" />
@@ -52,7 +49,6 @@ function Works(props) {
                                 <p>{val.content}</p>
                                 <Button onClick={() => openLink(val.link)}>VISIT</Button>
                             </div>
-                        </ScrollAnimation>
                     </Grid>
                 );
             })}

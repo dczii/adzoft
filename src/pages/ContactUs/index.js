@@ -1,7 +1,5 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
-import Icon from '@mdi/react'
-import { mdiRhombus } from '@mdi/js';
 
 import './styles.scss';
 

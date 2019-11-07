@@ -9,10 +9,10 @@
         text-align: left;
         justify-content: flex-start;
         position: relative;
-        padding-bottom: 250px;
+        margin-bottom: 250px;
 
         @media (max-width: 767px) {
-            padding-bottom: 50px;
+            margin-bottom: 100px;
         }
 
     }
@@ -111,17 +111,16 @@
         height: 350px;
         width: 300px;
         background: #FFF;
-        border-left: 15px solid #ef5f00;
-        border-bottom: 15px solid #ef5f00;
-        border-top: 15px solid #ef5f00;
-        border-color: #ef5f00;
+        border-left: 15px solid #e66c0f;
+        border-bottom: 15px solid #e66c0f;
+        border-top: 15px solid #e66c0f;
+        border-color: #e66c0f;
         padding: 40px 50px;
         position: absolute;
         right: 5%;
         bottom: 0px;
 
         @media (max-width: 767px) {
-            height: 100%;
             padding: 20px;
         }
 

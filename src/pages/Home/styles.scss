@@ -36,7 +36,7 @@
     }
 
     .section-vision {
-        height: 50vh;
+        height: 100vh;
         background: #2096BA;
         display: flex;
         flex-direction: column;
@@ -44,9 +44,19 @@
         align-items: center;
         position: relative;
 
+        > .content-container {
+            position: absolute;
+            bottom: 5%;
+            height: 200px;
+        }
+
         @media (max-width: 767px) {
+            height: 50vh;
+
             > .content-container {
-                bottom: 10%;
+                bottom: 5%;
+                height: unset;
+
 
                 > .title {
                     font-size: 1rem;
@@ -95,11 +105,6 @@
             font-size: 28px;
             font-family: "Otama";
         }
-    }
-
-    .content-container {
-        position: absolute;
-        bottom: 20%;
     }
 
     .section-team {
