@@ -1,23 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7eb2e92fcd46db54b3d3e803d5ac5e93",
+    "revision": "d4cff075035d22492ed704bfef65d3fc",
     "url": "/index.html"
   },
   {
-    "revision": "a796c9310621d57a9531",
-    "url": "/static/css/2.dbd8b1e0.chunk.css"
+    "revision": "0f20dd6a1f69bcc39a94",
+    "url": "/static/css/main.9989818f.chunk.css"
   },
   {
-    "revision": "0c9778ced0809b6e8a70",
-    "url": "/static/css/main.a143c4ac.chunk.css"
+    "revision": "f77a80af4fa90040cbd1",
+    "url": "/static/js/2.1328bbbc.chunk.js"
   },
   {
-    "revision": "a796c9310621d57a9531",
-    "url": "/static/js/2.aaf1fbab.chunk.js"
-  },
-  {
-    "revision": "0c9778ced0809b6e8a70",
-    "url": "/static/js/main.ebb4969d.chunk.js"
+    "revision": "0f20dd6a1f69bcc39a94",
+    "url": "/static/js/main.32c57e4d.chunk.js"
   },
   {
     "revision": "6e9c1a6bbfa86ef469a3",
@@ -42,6 +38,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "50b703d176b5fb426b67e18a2bb97fc2",
     "url": "/static/media/Latinka-SemiBold.50b703d1.ttf"
+  },
+  {
+    "revision": "417416d3b1b02fbfe5c72eb4fddf28fa",
+    "url": "/static/media/Otama-ep.417416d3.otf"
   },
   {
     "revision": "b397268342273a0573efdcdb8ff3b27d",
