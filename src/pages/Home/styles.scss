@@ -3,8 +3,17 @@
     height: 100vh;
     color: #FFF;
 
+    > .btn-slider {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
     .section-work {
-        background: #DF6E21;
+        height: 100vh;
+        background: #e66c0f;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -14,28 +23,20 @@
             width: auto;
         }
 
-        p.title {
-            font-size: 24px;
-            margin-bottom: 20px;
-            position: relative;
-            letter-spacing: 2px;
-            margin-top: 0px;
-    
-            &::before {
-                content: '';
-                display: block;
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                width: 30px;
-                height: 3px;
-                background: #fff;
+        > h2 {
+            font-family: "Otama";
+            font-weight: 400;
+            text-align: center;
+            width: 45%;
+            margin: 0 auto;
+            @media (max-width: 767px) {
+                width: 90%;
             }
         }
     }
 
     .section-vision {
-        height: 50vh;
+        height: 100vh;
         background: #2096BA;
         display: flex;
         flex-direction: column;
@@ -58,10 +59,10 @@
         
 
         p.title {
+            font-family: "Otama";
             font-size: 20px;
             margin-bottom: 20px;
             position: relative;
-            letter-spacing: 2px;
     
             &::before {
                 content: '';
@@ -77,12 +78,13 @@
 
         h3 {
             font-size: 28px;
+            font-family: "Otama";
         }
     }
 
     .content-container {
         position: absolute;
-        bottom: 20px;
+        bottom: 20%;
     }
 
     .section-team {

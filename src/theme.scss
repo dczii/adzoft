@@ -14,6 +14,12 @@
   src: url("./assets/fonts/Latinka-Regular.ttf");
 }
 
+@font-face {
+  font-family: "Otama";
+  font-weight: 400;
+  src: url("./assets/fonts/Otama-ep.otf");
+}
+
 body {
   margin: 0;
   font-family: "Latinka", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -36,12 +42,14 @@ h1 {
 
 h2 {
   font-size: 40px;
+  font-weight: 400;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
 h3 {
   font-size: 36px;
+  font-weight: 400;
   margin-top: 0px;
   margin-bottom: 0px;
 }
