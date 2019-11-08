@@ -1,11 +1,6 @@
 import React, { useState, useLayoutEffect } from 'react';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
-import SwipeableViews from 'react-swipeable-views';
-
-import Icon from '@mdi/react'
-import { mdiCheckboxBlankCircle } from '@mdi/js';
-import { mdiCheckboxBlankCircleOutline } from '@mdi/js';
 
 import WorkSVG from '../../assets/svg/ADZ1.svg';
 import VisionSVG from '../../assets/svg/ADZ2.svg';
@@ -13,7 +8,6 @@ import StudioSVG from '../../assets/svg/ADZ3.svg';
 import './styles.scss';
 
 function Home(props) {
-    const [activeIndex, setIndex] = useState(0);
     const [width] = useWindowSize();
 
 
@@ -32,16 +26,19 @@ function Home(props) {
 
     const renderWork = (xs, md) => {
         return <Grid item xs={xs} md={md} className='section-work' 
-            // onClick={() => props.history.push('/works')}
+            onClick={() => props.history.push('/works')}
         >
             <img src={WorkSVG} className='work-svg' alt='SVG' />
-            <h2>We create beautiful and functional websites for individuals and businesses. {width}</h2>
+            <Container className='content-container'>
+                <p className='title'>Works</p>
+                <h2>We create beautiful and functional websites for individuals and businesses.</h2>
+            </Container>
         </Grid>
     }
 
     const renderAbout = (xs, md) => {
         return <Grid item xs={xs} md={md} className='section-vision' 
-            // onClick={() => props.history.push('/about')}
+            onClick={() => props.history.push('/about')}
         >
             <img src={VisionSVG} className='vision-svg' alt='SVG' />
             <Container className='content-container'>
@@ -53,7 +50,7 @@ function Home(props) {
 
     const renderContact = (xs, md) => {
         return <Grid item xs={xs} md={md} className='section-vision section-team' 
-            // onClick={() => props.history.push('/contact-us')}
+            onClick={() => props.history.push('/contact-us')}
         >
             <img src={StudioSVG} className='contact-svg' alt='SVG' />
             <Container className='content-container mobile-contact-container'>
@@ -77,11 +74,7 @@ function Home(props) {
     }
 
     const renderMobileView = () => {
-        return <SwipeableViews style={{width: '100%', height: '100%'}}
-            enableMouseEvents
-            onChangeIndex={(index) => setIndex(index)}
-            index={activeIndex}
-        >
+        return <div>
             {renderWork(12,12)}
             <Grid item xs={12}>
                 <Grid container className='App mobile-block-2'>
@@ -90,21 +83,13 @@ function Home(props) {
                     
                 </Grid>
             </Grid>
-        </SwipeableViews>
+        </div>
+            
     }
 
     return (
         <Grid container className='home-component'>
             {width >= 768 ? renderWebView(): renderMobileView()}
-
-            {width <= 767 ? <div className='btn-slider'>
-                <Icon size={0.5} color='white' 
-                    path={activeIndex === 0 ? mdiCheckboxBlankCircle : mdiCheckboxBlankCircleOutline}
-                />
-                <Icon size={0.5} color='white' 
-                    path={activeIndex === 1 ? mdiCheckboxBlankCircle : mdiCheckboxBlankCircleOutline}
-                />
-            </div> : ''}
         </Grid>
     );
 }
