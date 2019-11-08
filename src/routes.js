@@ -13,7 +13,7 @@ function Routes({ location }) {
     <TransitionGroup>
         <CSSTransition
         key={location.key}
-        timeout={{ enter: 300, exit: 300 }}
+        timeout={500}
         classNames={'fade'}
         >
             <Switch location={location}>

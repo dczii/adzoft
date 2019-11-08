@@ -98,24 +98,20 @@ h3 {
 
 .fade-enter {
   opacity: 0.01;
-  background: #ef5f00 !important;
 
 }
 
 .fade-enter.fade-enter-active {
   opacity: 1;
-  transition: opacity 200ms ease-in;
-  background: #ef5f00 !important;
+  transition: opacity 500ms ease-in;
 
 }
 
 .fade-exit {
   opacity: 1;
-  background: #ef5f00 !important;
 }
 
 .fade-exit.fade-exit-active {
   opacity: 0.01;
-  background: #ef5f00 !important;
-  transition: opacity 200ms ease-in;
+  transition: opacity 500ms ease-in;
 }

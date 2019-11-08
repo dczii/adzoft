@@ -8,7 +8,7 @@ function App({location}) {
   console.log(location)
   return (
     <Router style={{position:'relative'}}>
-      <div>
+      <div className="fade">
         <Header />
         <Routes />
       </div>
