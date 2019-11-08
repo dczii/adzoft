@@ -35,7 +35,7 @@
             font-family: "Otama";
             font-weight: 400;
             text-align: center;
-            width: 45%;
+            width: 85%;
             margin: 0 auto;
             @media (max-width: 767px) {
                 width: 90%;
@@ -45,13 +45,14 @@
     }
 
     .mobile-block-2 {
+        height: 100%;
         @media (max-width: 767px) {
             height: 100vh;
         }
     }
 
     .section-vision {
-        height: 100vh;
+        height: 50vh;
         background: #2096BA;
         display: flex;
         flex-direction: column;
@@ -62,7 +63,6 @@
         > .content-container {
             position: absolute;
             bottom: 5%;
-            height: 200px;
             &.mobile-contact-container {
                 @media (max-width: 767px) {
                     bottom: 25%;      
@@ -100,9 +100,9 @@
         }
 
         .contact-svg {
-            max-width: 650px;
+            max-width: 150px;
             height: auto;
-            margin-top: -80px;
+            margin-top: -150px;
 
             @media (max-width: 767px) {
                 margin-top: -150px;
@@ -129,7 +129,7 @@
         }
 
         h3 {
-            font-size: 28px;
+            font-size: 24px;
             font-family: "Otama";
         }
     }
