@@ -10,7 +10,7 @@ function Works(props) {
     const data = [{
         title: 'Gana English',
         content: 'The couple Nico and Hazel saw an opportunity in teaching young korean kids the basics of English. Created from Scratch, adzoft delivered a functional website that provides them a source of both teachers and students.',
-        videoSrc: require('../../assets/apo-demo.mp4'),
+        videoSrc: require('../../assets/ganademo.mp4'),
         link: 'http://ganaenglish.com/'
     }, {
         title: 'Apo View Hotel',
