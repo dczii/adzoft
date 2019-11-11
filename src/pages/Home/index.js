@@ -30,7 +30,7 @@ function Home(props) {
         >
             <img src={WorkSVG} className='work-svg' alt='SVG' />
             <Container className='content-container'>
-                <p className='title'>Works</p>
+                <p className='title'>WORKS</p>
                 <h2>We create beautiful and functional websites for individuals and businesses.</h2>
             </Container>
         </Grid>
