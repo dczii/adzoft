@@ -64,6 +64,41 @@
             background-color: #e3570a;
         }
 
+        @media (min-width: 768px) and (max-width: 1023px) {
+            > label {
+                font-size: 3rem;
+            }
+    
+            > label.l1 {
+                text-indent: 10%;
+            }
+    
+            > label.l2 {
+                text-indent: 15%;
+            }
+            
+            > span {
+                font-size: 1rem;
+                text-indent: 0;
+            }
+    
+            > span.p1 {
+                text-indent: 0;
+                margin-left: 15%;
+            }
+            
+            > span.p2 {
+                text-indent: 0;
+                margin-left: 23%;
+            }
+            
+            > span.p3 {
+                text-indent: 0;
+                margin-top: 0px;
+                margin-left: 25%;
+            }
+        }
+
         @media (max-width: 767px) {
             > label {
                 font-size: 3rem;
