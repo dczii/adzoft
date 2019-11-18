@@ -17,6 +17,11 @@ function Works(props) {
         content: 'A Luxury hotel located at the heart of Davao City. Noticing the money that is left at the table by not having a modern and functional website, they contacted us to help fix this. Through constant collaboration, we provided them with a responsive website that is worthy of the Luxury of their hotel..',
         videoSrc: require('../../assets/apo-demo.mp4'),
         link: 'https://www.apoviewhotel.com'
+    }, {
+        title: 'TwoHillsALC',
+        content: 'Adult Learning Center at Two Hills County Canada. It aims to give details and education to the clients where they can see events and what they can learn when they go to the center. The website also provides help and links to their students that will be useful as they study.',
+        videoSrc: require('../../assets/twohillsalc.mp4'),
+        link: 'https://www.twohillsalc.com/'
     }]
 
     function openLink(link) {

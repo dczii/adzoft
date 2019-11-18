@@ -146,11 +146,11 @@
         height: 350px;
         width: 300px;
         background: #FFF;
-        border-left: 15px solid #fc7616;
-        border-bottom: 15px solid #fc7616;
-        border-top: 15px solid #fc7616;
+        border-left: 10px solid #fc7616;
+        border-bottom: 10px solid #fc7616;
+        border-top: 10px solid #fc7616;
         border-color: #fc7616;
-        padding: 40px 50px;
+        padding: 30px;
         position: absolute;
         right: 5%;
         bottom: 0px;
@@ -165,6 +165,7 @@
             width: 100%;
             border: unset;
             left: 0px;
+            height: 80%;
         }
 
         > label {
