@@ -9,7 +9,7 @@
     "@mdi/react": "^1.2.1",
     "animate.css": "^3.7.2",
     "lodash": "^4.17.15",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-router-dom": "^5.1.1",
